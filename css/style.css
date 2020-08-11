@@ -1,0 +1,349 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+/* html element identifers */
+/* make fonts responsive */
+
+body {
+    width: 100%;
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 1.45;
+}
+/* base font sizes */
+h1 {
+    font-size: 8em;
+}
+@media screen and (max-width: 1024px) {
+    h1 { font-size: 7em; }
+}
+@media screen and (max-width: 900px) {
+    h1 { font-size: 4em; }
+}
+@media screen and (max-width: 522px) {
+    h1 { font-size: 3em; }
+}
+@media screen and (max-width: 400px) {
+    h1 { font-size: 2em; }
+}
+
+h2 {
+    font-size: 2.5em;
+}
+@media screen and (max-width: 768px) {
+    h2 { font-size: 2.25em; }
+}
+@media screen and (max-width: 425px) {
+    h2 { font-size: 2em; }
+}
+@media screen and (max-width: 375px) {
+    h2 { font-size: 1.25em; }
+}
+
+h3 {
+    font-size: 2em;
+}
+@media screen and (max-width: 1024px) {
+    h3 { font-size: 1.75em; }
+}
+@media screen and (max-width: 768px) {
+    h3 {  font-size: 1.5em; }
+}
+@media screen and (max-width: 375px) {
+    h3 { font-size: 1.25em; }
+}
+
+h4 {
+    font-size: 1.25em;
+}
+@media screen and (max-width: 1024px) {
+    h4 { font-size: 1em; }
+}
+
+@media screen and (max-width: 768px) {
+    h4 { font-size: 0.95em; }
+}
+
+@media screen and (max-width: 375px) {
+    h4 { font-size: 0.75em; }
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 0.95em;
+}
+
+p {
+    font-size: 1.4em;
+}
+@media screen and (max-width: 1440px) {
+    p {  font-size: 1.25em; }
+}
+@media screen and (max-width: 1024px) {
+    p { font-size: 1em; }
+}
+@media screen and (max-width: 768px) {
+    p { font-size: 0.95em; }
+}
+
+/* font families */
+h1,h2,h3 {
+    font-family: courier, sans serif;
+}
+h4,h5,h6,p {
+    font-family: 'Work Sans', sans serif;
+}
+
+
+/* color et al */
+h4,p {
+    color: #777;
+}
+p {
+    text-align: justify;
+}
+
+/* hyperlinks */
+a:link {
+    color: #6ac5b0;
+}
+a:visited {
+    color: #6ac5b0;
+}
+a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+a:active {
+    color: blue;
+}
+
+
+/* unique identifiers */
+#page-header {}
+#about {
+    height: 100hh;
+    padding-top: 2em;
+    background: #fff;
+    color: #6ac5b0;
+    padding-bottom: 2em;
+}
+#about:before {
+    content: "";
+    display: block;
+    padding-top: 70px; /* header height + empty space */
+    margin-top: -50px; /* header height to degrees padding’s space */
+}
+#experience {
+    min-height: 100hh;
+    padding-top: 2em;
+    background: #6ac5b0;
+    padding-bottom: 2em;
+}
+#experience:before {
+    content: "";
+    display: block;
+    padding-top: 70px; /* header height + empty space */
+    margin-top: -50px; /* header height to degrees padding’s space */
+}
+#academic {
+    height: 100hh;
+    padding-top: 2em;
+    background: #fff;
+    padding-bottom: 2em;
+}
+#academic:before {
+    content: "";
+    display: block;
+    padding-top: 70px; /* header height + empty space */
+    margin-top: -50px; /* header height to degrees padding’s space */
+}
+
+/* class identifiers */
+.bg-image {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url('../img/balcony.jpg');
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+/* Nav Brand */
+.navbar {
+    font-family: courier, monospace, sans serif;
+}
+
+.navbar-nav {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 1024px) {
+    .navbar-nav { font-size: 1.25em; }
+}
+@media screen and (max-width: 768px) {
+    .navbar-nav { font-size: 1em; }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar-nav { font-size: 0.85em; }
+}
+
+.me {
+    font-size: 1.85em;
+    color: #6ac5b0 !important;
+}
+@media screen and (max-width: 768px) {
+    .me { font-size: 1.5em; }
+}
+
+
+/* progress bars */
+.teal {
+    background-color: #6ac5b0;
+}
+.skills {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+.progress {
+    border-radius: 0.6em;
+}
+
+/* useful multi purpose classes */
+.right {
+    text-align: right;
+}
+.center {
+    width: 90%;
+    margin: 0.25% auto;
+}
+.code {
+    font-family: courier, sans serif;
+}
+.footnote {
+    font-style: italic;
+    font-size: 1em;
+}
+.footnote-white {
+    padding-top: 1em;
+    color: #fff;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+}
+
+/* box shadow for image*/
+.shadow {
+    border-radius: 0.25em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* timteline */
+
+.timeline {
+    width: 85vw;
+    display: block;
+    margin: auto;
+    background-color: #dde1e2;
+    padding-bottom: 2em;
+    -webkit-box-shadow: #bdc3c7 0 5px 5px;
+    -moz-box-shadow: #bdc3c7 0 5px 5px;
+    box-shadow: #bdc3c7 0 5px 5px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.timeline>li {
+    padding: 1em 0;
+    list-style-type: none;
+}
+
+.bubble {
+    width: 100%;
+    padding: .5em 1em;
+    line-height: 1.4em;
+    padding: 20px;
+    background-color: #ecf0f1;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    text-align: left;
+    display: inline-block;
+}
+
+.bubble:hover>.over-bubble {
+    opacity: 1;
+}
+
+.bubble-container {
+    width: 75%;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.avatar {
+    width: 9%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: visible;
+    margin-left: 2%;
+}
+
+.avatar img {
+    width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ecf0f1;
+    position: relative;
+}
+
+.avatar:hover>.hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.retweet {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    right: 1em;
+    display: block;
+    background-color: #16a085;
+    padding: 4px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.retweet .icon-retweet {
+    color: white;
+    margin: auto;
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+}
