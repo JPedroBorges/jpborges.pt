@@ -132,10 +132,7 @@
                         </div>
                         <div class="bubble-container">
                             <div class="bubble">
-                                <div class="current">
-                                    <div class="icon-current"><i class="fas fa-briefcase"></i>
-                                    </div>
-                                </div>
+                                <div class="current"><div class="icon-current"><i class="fas fa-briefcase"></i></div></div>
                                 <h3>Asseco PST</h3>
                                 <h4>Backend Developer</h4>
                                 <p></p>
@@ -236,10 +233,7 @@
                         </div>
                         <div class="bubble-container">
                             <div class="bubble">
-                                <div class="current">
-                                    <div class="icon-current"><i class="fas fa-graduation-cap"></i>
-                                    </div>
-                                </div>
+                                <div class="current"><div class="icon-current"><i class="fas fa-graduation-cap"></i></div></div>
                                 <h3>Universidade da Madeira</h3>
                                 <h4>Masters in Computer Engineering</h4>
                             </div>
@@ -275,7 +269,11 @@
     <script src='./js/asset/jquery.min.js'></script>
     <script src='./js/asset/bootstrap.min.js'></script>
     <script src="./js/script.js"></script>
-
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </body>
 
 </html>
