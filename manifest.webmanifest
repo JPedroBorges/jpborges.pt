@@ -1,0 +1,48 @@
+{
+    "short_name": "JPBorges",
+    "name": "Jo&#xE3;o Pedro Borges",
+    "description": "Jo&#xE3;o Pedro Borges Personal website",
+    "icons": [
+      {
+        "src": "/img/icon/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/icon/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/img/icon/maskable_icon.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#212529",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#6ac5b0",
+    "shortcuts": [
+      {
+        "name": "About me",
+        "short_name": "About me",
+        "description": "About me page",
+        "url": "/#about"
+      },
+      {
+        "name": "Experience",
+        "short_name": "Experience",
+        "description": "Experience page",
+        "url": "/#experience"
+      },
+      {
+        "name": "Academic",
+        "short_name": "Academic",
+        "description": "Academic page",
+        "url": "/#academic"
+      }
+    ]
+  }
