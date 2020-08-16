@@ -25,14 +25,15 @@ self.addEventListener('install', function(e) {
         ,'/css/webfonts/fa-solid-900.woff2'
         ,'/css/webfonts/fa-solid-900.woff'
         ,'/css/webfonts/fa-solid-900.ttf'
+        ,'/css/webfonts/fa-brands-400.woff2'
+        ,'/css/webfonts/fa-brands-400.woff'
+        ,'/css/webfonts/fa-brands-400.ttf'
      ]);
    })
  );
 });
 
 self.addEventListener('fetch', function(event) {
-  console.log(event.request.url);
-
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then(function(response) {
       return response || fetch(event.request);
